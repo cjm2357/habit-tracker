@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './app';
+import Habits from './components/habits';
 import reportWebVitals from './reportWebVitals';
+import '@fortawesome/fontawesome-free/js/all.js';
+import SimpleHabits from './components/simpleHabits';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
+  // 생략가능 js에 use strict 같은 느낌
+  <React.StrictMode>   
+    {/* <App /> */}
+    <SimpleHabits></SimpleHabits>
+    {/* <Habits /> */}
   </React.StrictMode>,
+  //컴포넌트를 연결
   document.getElementById('root')
 );
 
